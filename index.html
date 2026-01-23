@@ -26,14 +26,20 @@
     <!-- mobile nav -->
 
     <aside id="default-sidebar"
-        class="fixed text-white top-0 left-0 z-40 w-80 md: h-full duration-500 transition-transform -translate-x-full lg:hidden"
+        class="fixed text-white top-0 left-0 z-40 w-full bg-[#000000cc] h-full duration-500 transition-transform -translate-x-full lg:hidden"
         aria-label="Sidebar">
-        <div
-            class="h-full px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
+        <div id=""
+            class=" h-full w-80  px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
 
-            <div class="flex justify-star items-end space-x-1 font-[700] px-4 ">
-                <iconify-icon icon="mdi:muffin" width="30" height="30" style="color: #fb3922"></iconify-icon>
-                <p>MuffinsCode</p>
+            <div class="flex justify-between items-center space-x-1 font-[700] px-4 ">
+                <div class="flex justify-between items-end space-x-1 font-[700]">
+                    <iconify-icon icon="mdi:muffin" width="30" height="30" style="color: #fb3922"></iconify-icon>
+                    <p>MuffinsCode</p>
+                </div>
+                <div  class="flex items-end cursor-pointer p-1">
+                   <iconify-icon id="cancel-icon" icon="line-md:menu-to-close-alt-transition" width="24" height="24"  style="color: #ffff"></iconify-icon>
+                </div>
+
             </div>
 
             <ul class="space-y-2 font-medium">
@@ -80,7 +86,7 @@
 
             <div class="flex flex-col justify-center px-5 space-y-3">
 
-                <div class="uppercase px- font-semibold">
+                <div class="uppercase font-semibold">
                     <p>find with me</p>
                 </div>
                 <div class="flex justify-start items-center space-x-2">
@@ -123,6 +129,7 @@
 
 
 
+    <!-- main container -->
     <div>
 
         <nav
