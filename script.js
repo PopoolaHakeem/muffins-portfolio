@@ -1,10 +1,10 @@
-const menu = document.querySelector('#default-sidebar')
-const cancelCTA = document.querySelector('#cancel-icon')
+const mobileMenu = document.querySelector('#mobileMenu');
+const closeBtn = document.querySelector('#closeBtn');
+const openBtn = document.querySelector('#menuBtn');
 
-// cancelCTA.addEventListener('click', () => {
-//     menu.classList.add('hidden')
-// })
+closeBtn.addEventListener('click', () => {
+    // alert ('hello')
+    mobileMenu.classList.remove('hidden')
+    openBtn.classList.add('hidden')
 
-cancelCTA.onclick = function() {
-    menu.style.display = 'hidden'
-}
+})

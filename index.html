@@ -25,19 +25,20 @@
 
     <!-- mobile nav -->
 
-    <aside id="default-sidebar"
+    <aside id="default-sidebar" id="mobileMenu"
         class="fixed text-white top-0 left-0 z-40 w-full bg-[#000000cc] h-full duration-500 transition-transform -translate-x-full lg:hidden"
         aria-label="Sidebar">
-        <div id=""
-            class=" h-full w-80  px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
+        <nav id=""
+            class=" h-full w-70  px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
 
             <div class="flex justify-between items-center space-x-1 font-[700] px-4 ">
                 <div class="flex justify-between items-end space-x-1 font-[700]">
                     <iconify-icon icon="mdi:muffin" width="30" height="30" style="color: #fb3922"></iconify-icon>
                     <p>MuffinsCode</p>
                 </div>
-                <div  class="flex items-end cursor-pointer p-1">
-                   <iconify-icon id="cancel-icon" icon="line-md:menu-to-close-alt-transition" width="24" height="24"  style="color: #ffff"></iconify-icon>
+                <div id="closeBtn" class="flex items-end cursor-pointer p-1">
+                    <iconify-icon icon="line-md:menu-to-close-alt-transition" width="24" height="24"
+                        style="color: #ffff"></iconify-icon>
                 </div>
 
             </div>
@@ -124,7 +125,7 @@
                 </div>
             </div>
 
-        </div>
+        </nav>
     </aside>
 
 
@@ -299,11 +300,11 @@
                 </div>
 
                 <div>
-                    <p data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
-                        aria-controls="default-sidebar" type="button"
+                    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
+                        aria-controls="default-sidebar" type="button" id="menuBtn"
                         class="w-10 h-10 bg-[#212529] flex justify-center items-center text-center rounded-full hover:bg-[#FF014F] duration-500 cursor-pointer box-border focus:ring-4 focus:ring-[#FF014F] focus:outline-none inline-flex lg:hidden">
                         <iconify-icon icon="ri:menu-3-fill" width="24" height="24" style="color: #ffff"></iconify-icon>
-                    </p>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -338,6 +339,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="script.js"></script>
 
 </body>
 
