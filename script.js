@@ -1,10 +1,14 @@
-const mobileMenu = document.querySelector('#mobileMenu');
+const mobileMenu = document.querySelector('.mobileMenu');
 const closeBtn = document.querySelector('#closeBtn');
 const openBtn = document.querySelector('#menuBtn');
 
-closeBtn.addEventListener('click', () => {
-    alert ('hello')
-    // mobileMenu.classList.remove('hidden')
-    // openBtn.classList.add('hidden')
 
+openBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden')
+
+})
+
+closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden')
+    openBtn.classList.remove('hidden')
 })
