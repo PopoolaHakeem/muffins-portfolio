@@ -134,7 +134,7 @@
     <div>
 
         <nav
-            class="z- px-4 py-4 absolute fixed flex items-center w-full justify-between gap-2 bg-transparent font-[700] text-white">
+            class=" px-4 py-4 absolute fixed flex items-center w-full justify-between gap-2 bg-transparent font-[700] text-white">
             <!-- Logo -->
             <div class="flex justify-center items-end space-x-1 ">
                 <iconify-icon icon="mdi:muffin" width="30" height="30" style="color: #fb3922"></iconify-icon>
@@ -310,9 +310,31 @@
         </nav>
 
         <div
-            class="bg-[url(/images/banner-background-one.jpg)] bg-cover bg-center h-screen w-full flex justify-center items-center text-white text-6xl">
+            class=" px-4 py-10 bg-[url(/images/banner-background-one.jpg)] bg-cover bg-center h-auto w-full flex flex-col justify-center items-center md:flex-row text-white text-6xl">
 
-            <p>hello world</p>
+            <div class="flex justify-center items-center ">
+               <p>
+                <img src="/images/Hakeem.png" alt="" class="relative z-20 w-[320px] md:w-[420px]">
+               </p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-4xl font-semibold">
+
+                <!-- Top text (behind image) -->
+                <p class="absolute top-30 z-0 animate-[bounce_3s_ease-in-out_infinite]">
+                    web developer
+                </p>
+
+                <!-- Image (on top) -->
+                <img src="/images/Hakeem.png" alt="Hakeem" class="relative z-20 w-[320px] md:w-[420px]" />
+
+                <!-- Bottom text (behind image) -->
+                <p class="absolute bottom-20 z-50 animate-[bounce_1.5s_ease-in-out_infinite]">
+                    web developer
+                </p>
+
+            </div>
+
 
 
 
