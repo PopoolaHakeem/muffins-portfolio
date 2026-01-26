@@ -2,6 +2,11 @@ body {
   
  font-family:  Rajdhani, sans-serif;
 }
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
 
 @keyframes typing {
   from {
