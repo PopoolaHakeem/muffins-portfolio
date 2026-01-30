@@ -22,3 +22,8 @@ body {
     border-color: transparent;
   }
 }
+
+.web-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+}
