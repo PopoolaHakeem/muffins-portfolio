@@ -27,7 +27,8 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px white;
 }
-
-/* .animate-order-1 {
-  animation: typing 2s steps(14) forwards, blink 0.5s step-end infinite;
-} */
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

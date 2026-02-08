@@ -77,11 +77,11 @@ window.addEventListener('scroll', () => {
 
   startAuto();
 
-var ring = document.querySelector('.on-click')
-ring.addEventListener('click', () => {
-    ring
-    ring.classList.add('animate-bounce')
-    setTimeout(() => {
-        ring.classList.remove('animate-bounce')
-    }, 1000)
-})
+// var ring = document.querySelector('.on-click')
+// ring.addEventListener('click', () => {
+//     ring
+//     ring.classList.add('animate-bounce')
+//     setTimeout(() => {
+//         ring.classList.remove('animate-bounce')
+//     }, 1000)
+// })
