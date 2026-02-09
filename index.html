@@ -24,16 +24,16 @@
 <body>
 
     <!-- mobile nav -->
-
     <aside id="default-sidebar" id=""
         class="mobileMenu fixed text-white top-0 left-0 z-90 w-full bg-[#000000cc] h-full duration-500 transition-transform -translate-x-full lg:hidden"
-        aria-label="Sideba">
+        aria-label="Sidebar">
         <nav id=""
             class=" h-full w-70  px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
 
-            <div class="flex justify-between items-center space-x-1 font-[700] px-4 ">
+            <!-- logo -->
+            <div class=" text-xl flex justify-between items-center space-x-1 font-[700] px-4 ">
                 <div class="flex justify-between items-end space-x-1 font-[700]">
-                    <iconify-icon icon="mdi:muffin" width="30" height="30" style="color: #fb3922"></iconify-icon>
+                    <img src="/images/muffins copy.png" alt="" class="w-8 h-8 rounded-full">
                     <p>MuffinsCode</p>
                 </div>
                 <div id="closeBtn" class="flex items-end cursor-pointer p-1">
@@ -43,6 +43,7 @@
 
             </div>
 
+            <!-- nav links -->
             <ul class="space-y-2 font-medium">
                 <li>
                     <a href="#"
@@ -134,12 +135,14 @@
     <!-- main container -->
     <div>
 
+        <!-- Nav Bar -->
         <nav id="navBg"
-            class="bg-red-400 z-40 px-4 py-4 absolute fixed flex items-center w-full justify-between gap-2 bg-transparent font-[700] text-white">
+            class="z-40 px-4 py-4 absolute fixed flex items-end w-full justify-between gap-2 bg-transparent font-[700] text-white">
+
             <!-- Logo -->
-            <div class="flex justify-center items-end space-x-1 ">
-                <iconify-icon icon="mdi:muffin" width="30" height="30" style="color: #fb3922"></iconify-icon>
-                <p>MuffinsCode</p>
+            <div class="text-xl flex justify-center items-end font-bold space-x-1">
+                <span><img src="/images/muffins copy.png" alt="" class="w-8 h-8 rounded-full "></span>
+                <span>MuffinsCode</span>
             </div>
 
             <!-- nav links  -->
@@ -1186,12 +1189,12 @@
 
         <!-- footer -->
         <footer
-            class="bg-black text-white h-full w-full px-4 py-10 flex flex-col justify-between items-start md:flex-row space-y-5 md:space-y-0 md:space-x-10">
+            class="bg-[#141414] text-white h-auto w-full px-4 py-10 flex flex-col justify-around  md:flex-row space-y-5 md:space-y-0">
 
             <!-- MuffinsCode -->
-            <div class="w-full h-full py-5 flex flex-col justify-start items-start lg:items-start  space-y-6">
+            <div class="w-full h-full py-5 flex flex-col justify-start items-start   space-y-6">
 
-                <h3 class="text-2xl flex justify-center items-center font-bold">
+                <h3 class="text-2xl flex justify-center items-center font-bold space-x-2">
                     <span><img src="/images/muffins copy.png" alt="" class="w-10 h-10 rounded-full "></span>
                     <span>MuffinsCode</span>
                 </h3>
@@ -1200,18 +1203,20 @@
                     <span>To Create Great</span>
                 </h1>
 
-                <form action=""
+                <form action="mailto:hakeempopoola04@gmail.com"
                     class=" w-[80%] flex justify-between items-center rounded-lg border-b-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
-                    <input type="text" placeholder="Email Address" class="py-4 text-[18px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#fff"
-                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-.67 2L12 10.75L5.67 6ZM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2a1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1" />
-                    </svg>
+                    <input type="text" placeholder="Email Address" class="py-4 text-[18px]" required >
+                    <button type="submit" class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#fff"
+                                d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-.67 2L12 10.75L5.67 6ZM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2a1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1" />
+                        </svg>
+                    </button>
                 </form>
             </div>
 
             <!-- Quick links -->
-            <div class="w-full h-full py-5 flex flex-col justify-start items-start lg:items-center space-y-6">
+            <div class="w-full h-full py-5 flex flex-col justify-start  md:items-center  space-y-6">
 
                 <h3 class="text-2xl font-bold">
                     Quick Links
@@ -1244,7 +1249,7 @@
 
 
             <!-- Contact -->
-            <div class="w-full h-full py-5 flex flex-col justify-start items-start lg:items-center space-y-4">
+            <div class="w-full h-full py-5 flex flex-col justify-start items-start  space-y-4">
                 <h1 class="text-2xl font-bold">
                     Contact
                 </h1>
