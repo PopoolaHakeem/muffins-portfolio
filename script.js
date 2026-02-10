@@ -73,7 +73,6 @@ track.addEventListener('touchend', () => {
 function startAuto() {
   autoSlide = setInterval(next, 6000);
 }
-
 startAuto();
 
 // back to top btn
