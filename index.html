@@ -92,7 +92,7 @@
                 <div class="uppercase font-semibold">
                     <p>find with me</p>
                 </div>
-                
+
                 <!-- social media platforms -->
                 <div class="flex justify-start items-center space-x-2">
 
@@ -103,8 +103,8 @@
                             <iconify-icon icon="uil:instagram" width="18" height="18" style="color: #ffff">
                             </iconify-icon>
                         </p>
-                    </a>  
-                        
+                    </a>
+
                     <!-- linkedin -->
                     <a href="https://www.linkedin.com/in/hakeem-popoola-702540281/">
                         <p
@@ -1147,7 +1147,7 @@
         </section>
 
         <!-- contact  -->
-        <section class="px-4 py-10 w-full h-auto bg-black ">
+        <section class="px-4 py-15 md:pb-30 w-full h-auto bg-black ">
             <div
                 class="bg-[#141414] w-full h-full px-4 py-10 flex flex-col justify-center rounded-xl space-y-10 lg:py-15 lg:px-10 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-10">
 
@@ -1196,23 +1196,28 @@
 
         <!-- footer -->
         <footer
-            class="bg-[#141414] mx-auto text-white h-auto w-full px-4 py-10 flex flex-col justify-around  md:flex-row space-y-5 md:space-y-0 md:space-x-10">
+            class="bg-[#141414] relative mx-auto text-white h-auto w-full px-4 py-15 md:py-20 flex flex-col justify-between  md:flex-row space-y-5 md:space-y-0 md:space-x-10">
 
             <!-- MuffinsCode -->
-            <div class="w-full h-full py-5 flex flex-col justify-start items-start   space-y-8">
+            <div class="relative py-10 flex flex-col justify-start items-start h-[350px] w-full md:w-[41%] md:h-[490px] space-y-8 animate-bgMove">
 
-                <h3 class="text-2xl flex justify-center items-center font-bold space-x-2">
-                    <span><img src="/images/muffins copy.png" alt="" class="w-10 h-10 rounded-full "></span>
+                <!-- animate bg -->
+                <div class=" w-[80%] h-full bg-cover bg-center absolute">
+                    <img src="/images/footer-bg.png" alt="" class=" animate-[spin_360s_ease-in-out_infinite]">
+                </div>
+                
+                <h3 class="z-10 text-2xl flex justify-center items-center font-bold space-x-2">
+                    <span><img src="/images/muffins copy.png" alt="" class="w-9 h-9 rounded-full "></span>
                     <span>MuffinsCode</span>
                 </h3>
-                <h1 class="text-4xl md:text-5xl  space-y-1 md:block">
+                <h1 class="z-10 text-4xl md:text-5xl  space-y-1 md:block">
                     <span class=" font-bold">Get Ready</span>
                     <span>To Create Great</span>
                 </h1>
 
                 <!-- footer form -->
                 <form action="mailto:hakeempopoola04@gmail.com"
-                    class=" w-[80%] flex justify-between items-center rounded-lg border-b-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
+                    class="z-10 w-[80%] flex justify-between items-center rounded-lg border-b-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
                     <input type="text" placeholder="Email Address" class="py-4 text-[18px] focus:outline-none" required>
                     <button type="submit" class="cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1224,7 +1229,7 @@
             </div>
 
             <!-- Quick links -->
-            <div class="w-full h-full py-5 flex flex-col justify-start  md:items-center  space-y-8">
+            <div class="py-10 flex flex-col justify-start md:items-start space-y-8">
 
                 <h3 class="text-2xl font-bold">
                     Quick Links
@@ -1256,9 +1261,8 @@
 
             </div>
 
-
             <!-- Contact -->
-            <div class="w-full h-full py-5 flex flex-col justify-start items-start  space-y-8">
+            <div class="py-10 flex flex-col justify-start items-start  space-y-8">
                 <h1 class="text-2xl font-bold">
                     Contact
                 </h1>
@@ -1302,6 +1306,8 @@
 
                     <!-- social media platform -->
                     <div class="flex justify-start items-center space-x-2">
+
+                        <!-- instagram -->
                         <a href="">
                             <p
                                 class="w-12 h-12 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
@@ -1332,7 +1338,7 @@
                         <a href="https://github.com/PopoolaHakeem">
                             <p
                                 class="w-12 h-12 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
-                                <iconify-icon icon="line-md:github" width="24" height="24" style="color: #ffff">
+                                <iconify-icon icon="mingcute:github-line" width="24" height="24" style="color: #fff">
                                 </iconify-icon>
                             </p>
                         </a>
