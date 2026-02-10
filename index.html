@@ -1199,13 +1199,15 @@
             class="bg-[#141414] relative mx-auto text-white h-auto w-full px-4 py-15 md:py-20 flex flex-col justify-between  md:flex-row space-y-5 md:space-y-0 md:space-x-10">
 
             <!-- MuffinsCode -->
-            <div class="relative py-10 flex flex-col justify-start items-start h-[350px] w-full md:w-[41%] md:h-[490px] space-y-8 animate-bgMove">
+            <div
+                class="relative py-10 flex flex-col justify-start items-start h-[350px] w-full md:w-[41%] md:h-[490px] space-y-8 animate-bgMove">
 
                 <!-- animate bg -->
                 <div class=" w-[85%] h-full bg-cover bg-center absolute">
                     <img src="/images/footer-bg.png" alt="" class=" animate-[spin_23s_ease-in-out_infinite]">
                 </div>
-                
+
+                <!-- MuffinsCode > heading -->
                 <h3 class="z-10 text-2xl flex justify-center items-center font-bold space-x-2">
                     <span><img src="/images/muffins copy.png" alt="" class="w-9 h-9 rounded-full "></span>
                     <span>MuffinsCode</span>
@@ -1216,7 +1218,7 @@
                 </h1>
 
                 <!-- footer form -->
-                <form action="mailto:hakeempopoola04@gmail.com"
+                <form action="mailto:hakeempopoola04@gmail.com" method="POST" enctype="text/plain"
                     class="z-10 w-[80%] flex justify-between items-center rounded-lg border-b-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
                     <input type="text" placeholder="Email Address" class="py-4 text-[18px] focus:outline-none" required>
                     <button type="submit" class="cursor-pointer">
@@ -1351,7 +1353,7 @@
 
 
         <!-- back to top btn -->
-        <div class="fixed bottom-10 right-5 bg-[#ff014f] p-3 rounded-full text-white hover:bg-[#ff014f]/80
+        <div id="backToTop" class="hidden fixed bottom-10 right-5 bg-[#ff014f] p-3 rounded-full text-white hover:bg-[#ff014f]/80
             transition-colors duration-300 ease-in-out">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
