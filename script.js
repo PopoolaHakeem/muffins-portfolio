@@ -45,7 +45,7 @@ function next() {
   updateSlide();
 }
 
-// Touch (mobile swipe)
+// Touch (mobile swipe carousel)
 track.addEventListener('touchstart', e => {
   startX = e.touches[0].clientX;
   isDragging = true;
@@ -76,19 +76,21 @@ function startAuto() {
 
 startAuto();
 
+// back to top btn
 const backToTopBtn = document.querySelector('#backToTop');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
-    backToTopBtn.classList.remove('hidden')
 
-  }
-  
-  else {
+  if (window.scrollY > 200) {
+    backToTopBtn.classList.remove('hidden');
+  } else {
     backToTopBtn.classList.add('hidden')
   }
+  
 })
 
- backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({top: 0, behavior: 'smooth'});
- })
- 
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
