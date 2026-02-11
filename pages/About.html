@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+    </style>
+
+    <link rel="icon" href="favicon.ico" type="image/icon">
+    <title>MuffinsCode-Portfolio</title>
+
+
+
+</head>
+
+<body>
+
+    <!-- mobile nav -->
+    <aside id="default-sidebar" id=""
+        class="mobileMenu fixed text-white top-0 left-0 z-90 w-full bg-[#000000cc] h-full duration-500 transition-transform -translate-x-full lg:hidden"
+        aria-label="Sidebar">
+        <nav id=""
+            class=" h-full w-70  px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
+
+            <!-- logo & closeBtn -->
+            <div class=" text-xl flex justify-between items-center space-x-1 font-[700] px-4 ">
+                <div class="flex justify-between items-end space-x-1 font-[700]">
+                    <img src="/images/muffins copy.png" alt="" class="w-8 h-8 rounded-full">
+                    <p>MuffinsCode</p>
+                </div>
+                <div id="closeBtn" class="flex items-end cursor-pointer p-1">
+                    <iconify-icon icon="line-md:menu-to-close-alt-transition" width="24" height="24"
+                        style="color: #ffff"></iconify-icon>
+                </div>
+
+            </div>
+
+            <!-- nav links -->
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="#"
+                        class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+
+                        <span class="ms-3">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+
+                        <span class="flex-1 ms-3 whitespace-nowrap">About</span>
+                        <span
+                            class="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded-sm">Pro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+
+                        <span class="flex-1 ms-3 whitespace-nowrap">Service</span>
+                        <span
+                            class="inline-flex items-center justify-center w-4.5 h-4.5 ms-2 text-xs font-medium text-fg-danger-strong bg-danger-soft border border-danger-subtle rounded-full">2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+
+                        <span class="flex-1 ms-3 whitespace-nowrap">Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center px-2 py-1.5 text-body rounded-base hover:bg-neutral-tertiary hover:text-fg-brand group">
+
+                        <span class="flex-1 ms-3 whitespace-nowrap">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- find with me  -->
+            <div class="flex flex-col justify-center px-5 space-y-3">
+
+                <div class="uppercase font-semibold">
+                    <p>find with me</p>
+                </div>
+
+                <!-- social media platforms -->
+                <div class="flex justify-start items-center space-x-2">
+
+                    <!-- Instagram -->
+                    <a href="">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="uil:instagram" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/hakeem-popoola-702540281/">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="ri:linkedin-fill" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://x.com/PopoolaHak43939">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="mingcute:twitter-fill" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/PopoolaHakeem">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="line-md:github" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </aside>
+
+
+    <!-- desktop nav -->
+    <div>
+
+        <!-- Nav Bar -->
+        <nav id="navBg"
+            class="z-40 px-4 py-4 absolute fixed flex items-end w-full justify-between gap-2 bg-transparent font-[700] text-white">
+
+            <!-- Logo -->
+            <div class="text-xl flex justify-center items-end font-bold space-x-1">
+                <span><img src="/images/muffins copy.png" alt="" class="w-8 h-8 rounded-full "></span>
+                <span>MuffinsCode</span>
+            </div>
+
+            <!-- nav links  -->
+            <div class="flex items-center justify-center gap-5 hidden lg:flex">
+
+                <a href="#"
+                    class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg transition duration-300 ease-in-out">
+                    <p>Home</p>
+                </a>
+
+                <a href="#"
+                    class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg transition duration-300 ease-in-out">
+                    <p>About</p>
+                </a>
+
+                <!-- service -->
+                <div>
+                    <!-- service Dropdown button -->
+                    <button id="" data-dropdown-toggle="servicedropdown" data-dropdown-trigger="hover"
+                        class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg transition duration-300 ease-in-out focus:outline-none text-center inline-flex items-center"
+                        type="button">
+                        Service
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="servicedropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#000] text-white">
+                        <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
+                                    Brandind Design</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
+                                    Motion Design</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
+                                    personal Branding</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
+                                    Photographer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- project -->
+                <div>
+                    <!-- project Dropdown button -->
+                    <button id="homedropdownDefaultButton" data-dropdown-toggle="projectdropdown"
+                        data-dropdown-trigger="hover"
+                        class="hover:text-[#FF014F] hover:bg-red-300 mx-1 px-4 py-1 rounded-lg transition duration-300 ease-in-out focus:outline-none text-center inline-flex items-center"
+                        type="button">
+                        Project
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="projectdropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#000] text-white">
+                        <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
+                                    Project</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
+                                    Project Style 2</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
+                                    Image 2</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
+                                    Video</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
+                                    Slideshow</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
+                                    Slideshow 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- contact -->
+                <a href="#"
+                    class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg hover:scale-105 transition duration-300 ease-in-out">
+                    <p>Contact</p>
+                </a>
+
+            </div>
+
+            <!-- Get in Touch button -->
+            <div class="flex justify-center items-center space-x-5 lg:space-x-0">
+                <div class="flex justify-center items-center space-x-2 hidden md:flex">
+                    <a href="">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="uil:instagram" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+
+                    <a href="">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="ri:linkedin-fill" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+
+                    <a href="">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="mingcute:twitter-fill" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+
+                    <a href="">
+                        <p
+                            class="w-10 h-10 bg-[#212529] flex justify-center items-center rounded-full hover:bg-[#FF014F] duration-500">
+                            <iconify-icon icon="ri:facebook-fill" width="18" height="18" style="color: #ffff">
+                            </iconify-icon>
+                        </p>
+                    </a>
+                </div>
+
+                <!-- menu Btn -->
+                <div>
+                    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
+                        aria-controls="default-sidebar" type="button" id="menuBtn"
+                        class="w-10 h-10 bg-[#212529] flex justify-center items-center text-center rounded-full hover:bg-[#FF014F] duration-500 cursor-pointer box-border focus:ring-4 focus:ring-[#FF014F] focus:outline-none inline-flex lg:hidden">
+                        <iconify-icon icon="ri:menu-3-fill" width="24" height="24" style="color: #ffff"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="bg-[#000] px-4 py-30 bg-[url(/images/breadcum-bg.png)] bg-cover bg-center md:h-96 w-full 
+                flex flex-col justify-center items-center text-white space-y-5">
+            <div class="text-3xl md:text-4xl font-bold text-white flex justify-center items-center ">
+                About
+            </div>
+            <div class="w-full h-full text-[17px] flex justify-center items-center space-x-2 ">
+                <a href="/index.html" class="text-white/80 hover:text-[#FF014F] transition duration-300 ease-in-out">
+                    Home
+                </a>
+                <span>
+                    <iconify-icon icon="heroicons:slash-16-solid" width="16" height="16"  style="color: #fff"></iconify-icon>
+                </span>
+                <span class=" text-[#FF014F]">About</span>
+            </div>
+        </div>
+
+        <!-- second section > Designs -->
+        <div
+            class="w-[100%] h-full px-4 py-10 bg-black space-y-8 text-white flex flex-col justify-between md:space-y-0 md:grid md:grid-cols-2 md:gap-8 lg:flex lg:flex-row lg:space-x-5">
+
+            <div data-aos="fade-up" data-aos-duration="900"
+                class="bg-[#141414] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center h-auto py-20 px-10 space-y-3">
+                <iconify-icon icon="mdi:pencil-ruler" width="60" height="60" style="color: #FF014F"></iconify-icon>
+                <p class="text-3xl font-semibold">
+                    Web Design
+                </p>
+                <p class="text-[16px] font-semibold text-[#9F9F9F] font-sans serif">
+                    50+ Projects
+                </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="900"
+                class="bg-[#141414] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center h-auto py-20 px-10 space-y-3">
+                <iconify-icon icon="fa-solid:bezier-curve" width="60" height="60" style="color: #FF014F"></iconify-icon>
+                <p class="text-3xl font-semibold">
+                    Ui/Ux Design
+                </p>
+                <p class="text-[16px] font-semibold text-[#9F9F9F] font-sans serif">
+                    20+ Projects
+                </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="900"
+                class="bg-[#141414] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center h-auto py-20 px-10 space-y-3">
+                <iconify-icon icon="flowbite:lightbulb-outline" width="60" height="60" style="color: #FF014F">
+                </iconify-icon>
+                <p class="text-3xl font-semibold">
+                    Web Research
+                </p>
+                <p class="text-[16px] font-semibold text-[#9F9F9F] font-sans serif">
+                    200+ Projects
+                </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="900"
+                class="bg-[#141414] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center h-auto py-20 px-10 space-y-3">
+                <iconify-icon icon="akar-icons:envelope" width="60" height="60" style="color: #FF014F"></iconify-icon>
+                <p class="text-3xl font-semibold">
+                    Marketing
+                </p>
+                <p class="text-[16px] font-semibold text-[#9F9F9F] font-sans serif">
+                    29+ Projects
+                </p>
+            </div>
+
+        </div>
+
+         <!-- progress chat -->
+        <div
+            class="w-full h-full text-white bg-black bg-black flex flex-col-reverse justify-center items-center space-y-6 px-4 py-10 lg:flex-row lg:space-x-6 lg:space-y-0">
+
+            <!-- Design skills -->
+            <div class="w-full bg-black flex flex-col justify-center py-7 space-y-7">
+
+                <div data-aos="fade-up" data-aos-duration="900" class="flex justify-start items-center space-x-3">
+                    <h1 class="text-3xl sm:text-4xl font-semibold ">
+                        Design Skills
+                    </h1>
+                    <img src="./images/custom-line.png" alt="" class="attachment-large size-sm wp-image-160">
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium ">Web Design</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">Ui/Ux Design</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">Web Research</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">Marketing</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Development skills -->
+            <div class="w-full bg-black flex flex-col justify-center py-5 space-y-7 ">
+
+                <div data-aos="fade-up" data-aos-duration="900" class="flex justify-start items-center space-x-3">
+                    <h1 class="text-3xl sm:text-4xl font-semibold ">
+                        Development Skills
+                    </h1>
+                    <img src="./images/custom-line.png" alt="" class="attachment-large size-sm wp-image-160">
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">HTML</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">CSS</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">JavaScript</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900">
+                    <p class="mb-3 text-xl font-medium">Tailwind CSS</p>
+                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                        <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- years of experience -->
+        <div class="bg-black h- w-full px-4 flex flex-col justify-center items-center lg:space-x-4 lg:flex-row">
+
+            <div data-aos="fade-up" data-aos-duration="900"
+                class="text-white bg-[#FF014F] bg-gradient-to-br from-[#141414] via-[#000] to-[#FF014F] border border-[#ff494a29] w-full h-auto
+                        border border-[#ff494a29] rounded-2xl flex flex-col justify-center pb-10 px-6 space-y-3 md:py-">
+                <h1 class="text-[167px] font-bold text-[#ff014f]">
+                    4+
+                </h1>
+
+                <h3 class="text-2xl font-bold">
+                    Years of Experience
+                </h3>
+                <p class="text-[18px] font-[400] font-sans serif">
+                    Delivering reliable solutions, guiding businesses to improve efficiency, growth, and overall
+                    performance.
+                </p>
+            </div>
+
+            <!-- projects stat -->
+            <div
+                class=" bg-purple-30 w-full h-full py-10 text-white flex flex-col justify-center items-center space-y-7 md:space-y-0 md:grid md:grid-cols-2 md:gap-6">
+
+                <div data-aos="fade-up" data-aos-duration="900"
+                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+                    <p class="text-4xl md:text-5xl font-bold">
+                        63+
+                    </p>
+                    <p class="text-[16px] font-semibold text-[#9F9F9F]">
+                        Our Project Complete
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900"
+                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+                    <p class="text-4xl md:text-5xl font-bold">
+                        98+
+                    </p>
+                    <p class="text-[16px] font-semibold text-[#9F9F9F]">
+                        Clients Reviews
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900"
+                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+
+                    <p class="text-4xl md:text-5xl font-bold">
+                        150+
+                    </p>
+                    <p class="text-[16px] font-semibold text-[#9F9F9F]">
+                        Our NAtural Products
+                    </p>
+
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="900"
+                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+
+                    <p class=" text-4xl md:text-5xl font-bold">
+                        240+
+                    </p>
+                    <p class="text-[16px] font-semibold text-[#9F9F9F]">
+                        Our Satisfied clients
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Education & Experience -->
+        <div class="bg-black w-full flex flex-col justify-center items-cente space-y-7 px-4 py-10">
+
+            <!-- heading -->
+            <div class="h-full w-full flex flex-col justify-center items-center space-y-3 pb-7">
+
+                <h3 class="uppercase text-xl text-[#FF014F] font-semibold">
+                    Education & Experience
+                </h3>
+
+                <h1 data-aos="fade-up" data-aos-duration="900"
+                    class="text-3xl sm:text-4xl font-bold text-white flex flex-col items-center md:flex-row md:space-x-3">
+                    <span>Empowering Creativity</span>
+                    <span>through</span>
+                </h1>
+
+                <p data-aos="fade-up" data-aos-duration="900"
+                    class="text-center text-[#9F9F9F] font-[400] font-sans serif">
+                    Empowering creativity through education and experience, fostering innovation, and inspiring
+                    individuals to
+                    reach their full potential.
+                </p>
+
+            </div>
+
+            <!-- education -->
+            <div class="h-full w-full bg-whited flex flex-col justify-center space-y-5 ">
+
+                <div data-aos="fade-up" data-aos-duration="900"
+                    class="text-4xl font-semibold text-white space-x-3 flex justify-start items-center">
+                    <h1>Education</h1>
+                    <img src="/images/custom-line.png" alt="">
+                </div>
+
+                <div class="w-full h-full flex flex-col justify-center items-center md:grid md:grid-cols-2 gap-4 py-5">
+                    <!-- 01 -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
+
+                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                            Bachelor of Science in Computer Science
+                        </p>
+
+                        <p class="font-bold">2019-2021</p>
+
+                        <p class="text-[#9F9F9F] text-[16px] font-sans serif">
+                            Built a strong foundation in web development by learning HTML, CSS, JavaScript,
+                            and responsive design principles.
+                        </p>
+
+                    </div>
+
+                    <!-- 02 -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
+
+                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                            Web Design Certification
+                        </p>
+
+                        <p class="font-bold">2023-2025</p>
+
+                        <p class="text-[#9F9F9F] text-[16px] font-sans serif">
+                            A comprehensive certification in web design principles, including user interface (UI)
+                            and user experience (UX) design.
+                        </p>
+
+                    </div>
+
+                    <!-- 03 -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
+
+                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                            Self-Taught Web Developer
+                        </p>
+
+                        <p class="font-bold">2021-2023</p>
+
+                        <p class="text-[#9F9F9F] text-[16px] font-sans serif">
+                            A self-directed learning journey in web development, acquiring skills in front-end
+                            technologies,
+                            and building real-world projects to gain practical experience.
+                        </p>
+
+                    </div>
+
+                    <!-- 04 -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
+
+                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                            Professional Web Developer
+                        </p>
+
+                        <p class="font-bold">2024-Present</p>
+
+                        <p class="text-[#9F9F9F] text-[16px] font-sans serif">
+                            Currently working as a professional web developer, applying my skills to create responsive
+                            and
+                            user-friendly websites, and continuously learning and adapting to new technologies in the
+                            field.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Experience -->
+        <div class="bg-black h-auto w-full flex flex-col justify-center px-4 pt-7 pb-10 space-y-5 md:space-y-0 ">
+            <div data-aos="fade-up" data-aos-duration="900"
+                class="text-4xl font-semibold text-white space-x-3 flex justify-start items-center">
+                <h1>Experience</h1>
+                <img src="/images/custom-line.png" alt="">
+            </div>
+
+            <div class="h-full w-full flex flex-col justify-center items-center lg:space-x-5 lg:flex-row">
+
+                <div class="h-full w-full flex flex-col justify-center items-center">
+
+                    <!-- digital marketer -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class=" text-white h-full w-full pb-7 flex flex-col space-y- justify-center">
+
+                        <h3 class="text-[#ff014f] font-sans seriff">
+                            Digital Marketer
+                        </h3>
+
+                        <h2 class="font-bold text-[22px] text-white">
+                            Soft Tech (2 Years)
+                        </h2>
+
+                        <h3 class="font-[400] text-[17px]">
+                            UI/UX Designer
+                        </h3>
+
+                        <p class="text-[#9F9F9F] text-[16px] font-sans serif pt-3">
+                            Supported digital marketing strategies and design user-friendly interfaces that approved
+                            engagement and brand visibility.
+                        </p>
+
+                    </div>
+
+                    <!-- Developer -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class=" text-white h-full w-full pb-7 flex flex-col space-y- justify-center">
+
+                        <h3 class="text-[#ff014f] font-sans seriff">
+                            Developer
+                        </h3>
+
+                        <h2 class="font-bold text-[22px] text-white">
+                            ModernTech (3 Years)
+                        </h2>
+
+                        <h3 class="font-[400] text-[17px]">
+                            Web Developer
+                        </h3>
+
+                        <p class="text-[#9F9F9F] text-[16px] font-sans serif pt-3">
+                            Built responsive website and web application using modern frontend tools while
+                            maintaining performance and usability standards.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- images -->
+                <div data-aos="fade-up" data-aos-duration="900 "
+                    class=" h-auto w-full flex flex-col justify-center items-center">
+                    <img src="/images/expert-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
