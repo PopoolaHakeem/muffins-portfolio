@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
+// carousel slider
 const track = document.getElementById('testimonialTrack');
 const slides = track.children;
 
@@ -92,4 +92,4 @@ backToTopBtn.addEventListener('click', () => {
     top: 0,
     behavior: 'smooth'
   });
-})
+});
