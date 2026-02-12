@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
   } else {
     backToTopBtn.classList.add('hidden')
   }
-  
+  // alert('hello')
 })
 
 backToTopBtn.addEventListener('click', () => {
@@ -93,3 +93,4 @@ backToTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+

@@ -652,18 +652,19 @@
 
         </footer>
 
+        
+        <!-- back to top btn -->
+        <div id="backToTop"
+            class="hidden fixed bottom-10 md:bottom-20 
+            right-5 bg-[#ff014f] p-3 rounded-full text-white hover:bg-[#ff014f]/80 backdrop-blur hover:scale-110 transition-colors duration-300 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-up">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
 
-
-
-
-
-
-
-
-
-
-
-
+        </div>
 
 
 
@@ -673,7 +674,27 @@
     <script>
         AOS.init();
     </script>
-    <script src="/script.js"></script>
+
+    <!-- // back to top btn -->
+    <script>
+        const backToTopBtn = document.querySelector('#backToTop');
+        window.addEventListener('scroll', () => {
+
+            if (window.scrollY > 200) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden')
+            }
+            // alert('hello')
+        })
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 
 </body>
 
