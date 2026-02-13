@@ -175,7 +175,7 @@
                         <button id="" data-dropdown-toggle="servicedropdown" data-dropdown-trigger="hover"
                             class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg transition duration-300 ease-in-out focus:outline-none text-center inline-flex items-center"
                             type="button">
-                            Service
+                            Services
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -190,7 +190,7 @@
                             <li>
                                 <a href="#"
                                     class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Brandind Design</a>
+                                    Branding Design</a>
                             </li>
 
                             <li>
@@ -208,70 +208,17 @@
                             <li>
                                 <a href="#"
                                     class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Photographer</a>
+                                    Photography</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- project -->
-                <div>
-                    <!-- project Dropdown button -->
-                    <a href="/Project.html">
-                        <button id="homedropdownDefaultButton" data-dropdown-toggle="projectdropdown"
-                            data-dropdown-trigger="hover"
-                            class="hover:text-[#FF014F] hover:bg-red-300 mx-1 px-4 py-1 rounded-lg transition duration-300 ease-in-out focus:outline-none text-center inline-flex items-center"
-                            type="button">
-                            Project
-                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
+                    <a href="/Project.html"
+                        class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg hover:scale-105 transition duration-300 ease-in-out">
+                        <p>Project</p>
                     </a>
-
-                    <!-- Dropdown menu -->
-                    <div id="projectdropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#000] text-white">
-                        <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Project</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Project Style 2</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Image 2</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Video</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Slideshow</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Slideshow 2</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
                 <!-- contact -->
                 <a href="/Contact.html"
@@ -976,39 +923,24 @@
         </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
     </div>
-
-
-
-
-
-
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-    <!-- // back to top btn -->
-    <script>
-        const backToTopBtn = document.querySelector('#backToTop');
-        window.addEventListener('scroll', () => {
-
-            if (window.scrollY > 200) {
-                backToTopBtn.classList.remove('hidden');
-            } else {
-                backToTopBtn.classList.add('hidden')
-            }
-        })
-
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="/script.js"></script>
 
 </body>
 

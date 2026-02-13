@@ -90,6 +90,7 @@
                 </li>
             </ul>
 
+
             <!-- find with me  -->
             <div class="flex flex-col justify-center px-5 space-y-3">
 
@@ -175,7 +176,7 @@
                         <button id="" data-dropdown-toggle="servicedropdown" data-dropdown-trigger="hover"
                             class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg transition duration-300 ease-in-out focus:outline-none text-center inline-flex items-center"
                             type="button">
-                            Service
+                            Services
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -190,7 +191,7 @@
                             <li>
                                 <a href="#"
                                     class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Brandind Design</a>
+                                    Branding Design</a>
                             </li>
 
                             <li>
@@ -208,70 +209,17 @@
                             <li>
                                 <a href="#"
                                     class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Photographer</a>
+                                    Photography</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- project -->
-                <div>
-                    <!-- project Dropdown button -->
-                    <a href="/Project.html">
-                        <button id="homedropdownDefaultButton" data-dropdown-toggle="projectdropdown"
-                            data-dropdown-trigger="hover"
-                            class="hover:text-[#FF014F] hover:bg-red-300 mx-1 px-4 py-1 rounded-lg transition duration-300 ease-in-out focus:outline-none text-center inline-flex items-center"
-                            type="button">
-                            Project
-                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg>
-                        </button>
-                    </a>
-
-                    <!-- Dropdown menu -->
-                    <div id="projectdropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#000] text-white">
-                        <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Project</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">
-                                    Project Style 2</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Image 2</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Video</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Slideshow</a>
-                            </li>
-
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:text-[#FF014F] hover:px-5 duration-300 ease-in-out">Home
-                                    Slideshow 2</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <a href="/Project.html"
+                    class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg hover:scale-105 transition duration-300 ease-in-out">
+                    <p>Project</p>
+                </a>
 
                 <!-- contact -->
                 <a href="/Contact.html"
@@ -350,6 +298,37 @@
             </div>
         </div>
 
+        <!-- services section  -->
+        <div
+            class="bg-purple-300 text-white px-4 py-5 md:py-10 h-auto w-full flex flex-col justify-center items-center lg:flex-row lg:space-x-10">
+
+            <div class="bg-blue-300 h-full w-full flex flex-col space-y-5 justify-center items-cente ">
+                <img src="/images/service-detail.png" alt="">
+
+                <h1 class="text-3xl md:text-4xl font-bold">
+                    Brand Design
+                </h1>
+                <p class="font-sans text-[17px] w-full md:w-3/4 lg:w-full text-white/80">
+                    I am a branding designer with a passion for creating unique and memorable brand identities. With
+                    over 4 years of experience in the industry, I have worked with a diverse range of clients,
+                    helping them establish a strong visual presence in the market.
+                </p>
+            </div>
+
+            <!-- services section 2 -->
+
+            <div class="bg-blue-400 h-full w-full flex flex-col justify-center items-start lg:items-center space-y-5 ">
+                <h1 class="text-3xl md:text-4xl font-bold">
+                    Service Category &bull;
+                </h1>
+
+                <section>
+                    ggggggg
+                </section>
+
+            </div>
+
+        </div>
 
 
 
@@ -365,7 +344,8 @@
 
 
 
-        
+
+
         <!-- back to top btn -->
         <div id="backToTop"
             class="hidden fixed bottom-10 md:bottom-20 
@@ -383,33 +363,12 @@
 
 
 
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="script.js"></script>
-
-        <!-- // back to top btn -->
-        <script>
-            const backToTopBtn = document.querySelector('#backToTop');
-            window.addEventListener('scroll', () => {
-
-                if (window.scrollY > 200) {
-                    backToTopBtn.classList.remove('hidden');
-                } else {
-                    backToTopBtn.classList.add('hidden')
-                }
-                // alert('hello')
-            })
-
-            backToTopBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        </script>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 
 </body>
 

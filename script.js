@@ -2,6 +2,25 @@ const mobileMenu = document.querySelector('.mobileMenu');
 const closeBtn = document.querySelector('#closeBtn');
 const openBtn = document.querySelector('#menuBtn');
 
+// back to top btn
+const backToTopBtn = document.querySelector('#backToTop');
+window.addEventListener('scroll', () => {
+
+  if (window.scrollY > 200) {
+    backToTopBtn.classList.remove('hidden');
+  } else {
+    backToTopBtn.classList.add('hidden')
+  }
+  // alert('hello')
+})
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 
 openBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('hidden')
@@ -75,22 +94,4 @@ function startAuto() {
 }
 startAuto();
 
-// back to top btn
-const backToTopBtn = document.querySelector('#backToTop');
-window.addEventListener('scroll', () => {
-
-  if (window.scrollY > 200) {
-    backToTopBtn.classList.remove('hidden');
-  } else {
-    backToTopBtn.classList.add('hidden')
-  }
-  // alert('hello')
-})
-
-backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
 
