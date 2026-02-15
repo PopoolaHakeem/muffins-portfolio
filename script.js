@@ -97,10 +97,10 @@ function startAuto() {
 startAuto();
 
 
-setTimeout(() => {
+// setTimeout(() => {
   
-  document.getElementById('loader').style.display = 'none';
-  const content = document.getElementById('content');
-  content.style.display = 'block';
-  setTimeout(() => content.classList.add('show'), 10); // triggers fade-in
-}, 3000);
+//   document.getElementById('loader').style.display = 'none';
+//   const content = document.getElementById('content');
+//   content.style.display = 'block';
+//   setTimeout(() => content.classList.add('show'), 10); 
+// }, 3000);
