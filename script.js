@@ -2,6 +2,8 @@ const mobileMenu = document.querySelector('.mobileMenu');
 const closeBtn = document.querySelector('#closeBtn');
 const openBtn = document.querySelector('#menuBtn');
 
+
+ 
 // back to top btn
 const backToTopBtn = document.querySelector('#backToTop');
 window.addEventListener('scroll', () => {
@@ -95,3 +97,10 @@ function startAuto() {
 startAuto();
 
 
+setTimeout(() => {
+  
+  document.getElementById('loader').style.display = 'none';
+  const content = document.getElementById('content');
+  content.style.display = 'block';
+  setTimeout(() => content.classList.add('show'), 10); // triggers fade-in
+}, 3000);

@@ -1,17 +1,49 @@
 body {
-  
- font-family:  Rajdhani, sans-serif;
+
+  font-family: Rajdhani, sans-serif;
 }
+
 .rajdhani-regular {
   font-family: "Rajdhani", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  /* or any color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 9999;
+}
+
+/* Hide content initially */
+#content {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#content.show {
+  opacity: 1;
+}
+
+
+
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 14ch;
   }
@@ -27,6 +59,7 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px white;
 }
+
 .no-spinner::-webkit-inner-spin-button,
 .no-spinner::-webkit-outer-spin-button {
   -webkit-appearance: none;
