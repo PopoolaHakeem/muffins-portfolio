@@ -98,7 +98,6 @@ startAuto();
 
 
 // setTimeout(() => {
-  
 //   document.getElementById('loader').style.display = 'none';
 //   const content = document.getElementById('content');
 //   content.style.display = 'block';
