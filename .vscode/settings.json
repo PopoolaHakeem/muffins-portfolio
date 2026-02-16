@@ -1,0 +1,5 @@
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.excludeGitIgnore": false,
+    "accessibility.windowTitleOptimized": true
+}
