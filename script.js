@@ -1,9 +1,9 @@
-const mobileMenu = document.querySelector('.mobileMenu');
+const mobileMenu = document.querySelector('#default-sidebar');
 const closeBtn = document.querySelector('#closeBtn');
 const openBtn = document.querySelector('#menuBtn');
 
 
- 
+
 // back to top btn
 const backToTopBtn = document.querySelector('#backToTop');
 window.addEventListener('scroll', () => {
