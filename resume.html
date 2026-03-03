@@ -7,6 +7,7 @@
     <title>Download Resume</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
@@ -15,28 +16,36 @@
 
 <body>
 
-    <div class="w-full h-full px-6 pt-15 pb-20 text-white bg-[#141414] flex flex-col justify-center items-center space-y-5">
-        <h1 class="text-3xl sm:text-4xl font-bold text-white">
+    <div
+        class="w-full h-full px-6 pt-15 pb-20 text-white bg-[#141414] flex flex-col justify-center items-center space-y-5">
+        <h1 data-aos="zoom-in" data-aos-duration="900" class="text-3xl sm:text-4xl font-bold text-white">
             Download My Resume
         </h1>
 
-                <a href="/images/Popoola H. Resume.PNG" class="px-5 py-2 bg-[#FF014F] font-[600] rounded-full hover:bg-[#ff014f]/80 hover:scale-102 transition-all duration-300 ease-in-out flex items-center" download>
-                    Click here to download.
-                </a>
-        
-        <div>
+        <a href="/images/Popoola H. Resume.PNG" data-aos="zoom-in" data-aos-duration="900"
+            class="px-5 py-2 bg-[#FF014F] font-[600] rounded-full hover:bg-[#ff014f]/80 hover:scale-102 transition-all duration-300 ease-in-out flex items-center"
+            download>
+            Click here to download.
+        </a>
+
+        <div data-aos="fade-up" data-aos-duration="900">
             <img src="/images/Popoola H. Resume.PNG" alt="" height="100" class="w-full max-w-80 rounded-lg shadow-lg">
         </div>
 
         <div>
-            <a href="About.html" class="px-5 py-2 bg-[#FF014F] rounded-full hover:bg-[#ff014f]/80 hover:scale-102 transition-all duration-300 ease-in-out flex items-center space-x-2">
+            <a href="About.html"
+                class="px-5 py-2 bg-[#FF014F] rounded-full hover:bg-[#ff014f]/80 hover:scale-102 transition-all duration-300 ease-in-out flex items-center space-x-2">
                 <iconify-icon icon="mdi:arrow-left" width="20" height="20" class="text-white"></iconify-icon>
                 <span class="text-white font-[600]">Back</span>
             </a>
         </div>
     </div>
-    
 
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 
