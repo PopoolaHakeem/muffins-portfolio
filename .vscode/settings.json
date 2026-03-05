@@ -2,5 +2,5 @@
     "explorer.fileNesting.enabled": true,
     "explorer.excludeGitIgnore": false,
     "accessibility.windowTitleOptimized": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5502
 }
