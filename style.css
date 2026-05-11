@@ -11,7 +11,7 @@ body {
 
 
 
-/* #loader {
+#loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,18 +23,18 @@ body {
   align-items: center;
   font-size: 2rem;
   z-index: 9999;
-} */
+}
 
 /* Hide content initially */
-/* #content {
+#content {
   display: none;
   opacity: 0;
   transition: opacity 1s ease-in;
-} */
+}
 
-/* #content.show {
+#content.show {
   opacity: 1;
-} */
+}
 
 
 

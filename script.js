@@ -99,7 +99,6 @@ function startAuto() {
 startAuto();
 
 
-
 // COUNTER ANIMATION
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");

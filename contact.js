@@ -20,7 +20,7 @@ form.addEventListener("submit", function (e) {
     alert("Message sent successfully!");
     form.reset();
   })
-  // 
+  // CATCH ANY ERRORS AND LOG THEM TO THE CONSOLE
   .catch((error) => {
     alert("Failed to send message");
     console.log(error);
