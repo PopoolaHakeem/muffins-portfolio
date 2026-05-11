@@ -4,7 +4,7 @@ const openBtn = document.querySelector('#menuBtn');
 
 
 
-// back to top btn
+// BACK TO TOP BUTTON
 const backToTopBtn = document.querySelector('#backToTop');
 window.addEventListener('scroll', () => {
 
@@ -13,9 +13,10 @@ window.addEventListener('scroll', () => {
   } else {
     backToTopBtn.classList.add('hidden')
   }
-  // alert('hello')
+
 })
 
+// SMOOTH SCROLL TO TOP
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
@@ -23,7 +24,7 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
-
+// MOBILE MENU
 openBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('hidden')
   // closeBtn.classList.remove('hidden')
@@ -35,6 +36,7 @@ closeBtn.addEventListener('click', () => {
   openBtn.classList.remove('hidden')
 })
 
+// NAVBAR BACKGROUND CHANGE ON SCROLL
 const navBg = document.querySelector('#navBg');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 1) {
@@ -47,7 +49,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// carousel slider
+// TESTIMONIAL > carousel slider
 const track = document.getElementById('testimonialTrack');
 const slides = track.children;
 
@@ -66,7 +68,7 @@ function next() {
   updateSlide();
 }
 
-// Touch (mobile swipe carousel)
+// TESTIMONIAL > Touch (mobile swipe carousel)
 track.addEventListener('touchstart', e => {
   startX = e.touches[0].clientX;
   isDragging = true;
@@ -97,35 +99,40 @@ function startAuto() {
 startAuto();
 
 
-// setTimeout(() => {
-//   document.getElementById('loader').style.display = 'none';
-//   const content = document.getElementById('content');
-//   content.style.display = 'block';
-//   setTimeout(() => content.classList.add('show'), 10); 
-// }, 3000);
 
-
-// counter animation
+// COUNTER ANIMATION
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");
 
-  const startCounter = (counter) => {
+  function startCounter(counter) {
     const target = Number(counter.getAttribute("data-target"));
-    let count = 0;
-    const speed = 100;
+    const duration = 2000; // 2 seconds
+    let startTime = null; // Start from 0 for a smoother animation
 
-    function updateCount() {
-      if (count < target) {
-        count++;
-        counter.innerText = count;
-        setTimeout(updateCount, speed);
+    function easeInOutQuad(t) {
+      return t < 0.5 ?
+        2 * t * t :
+        1 - Math.pow(-2 * t + 2, 2) / 2;
+    }
+
+    function animate(currentTime) {
+      if (!startTime) startTime = currentTime;
+
+      const progress = (currentTime - startTime) / duration;
+      const easedProgress = easeInOutQuad(Math.min(progress, 1));
+
+      const currentValue = Math.floor(easedProgress * target);
+      counter.innerText = currentValue;
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
       } else {
         counter.innerText = target + "+";
       }
     }
 
-    updateCount();
-  };
+    requestAnimationFrame(animate);
+  }
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
