@@ -845,7 +845,7 @@
 
 
         <!-- Projects -->
-        <div class="bg-black h-auto w-full px-4 pt-10 pb-2 flex flex-col justify-center items-center">
+        <div class="bg-black h-auto w-full px-4 pt-10 pb-2 flex flex-col justify-center items-center">i havn
 
             <!-- heading -->
             <div class="h-full w-full flex flex-col justify-center items-center space-y-3 pb-7">
@@ -1254,18 +1254,18 @@
                 </div>
 
                 <!-- contact form  -->
-                <form action="mailto:hakeempopoola04@gmail.com" method="POST" enctype="text/plain"
+                <form id="contact-form" enctype="text/plain"
                     class="h-full w-full text-gray-500 text-xl flex flex-col justify-center rounded-lg lg:ml-10 space-y-6 md:space-y-10 ">
 
-                    <input type="text" name="name" id="" placeholder="Your Name" required
+                    <input type="text" name="name" id="name" placeholder="Your Name" required
                         class="on-click py-4 px-4 rounded-lg border-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
-                    <input type="number" name="tel" id="" placeholder="Phone Number" required
+                    <input type="number" name="tel" id="phone" placeholder="Phone Number" required
                         class="no-spinner py-4 px-4 rounded-lg border-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none appearance-none">
-                    <input type="email" name="email" id="" placeholder="Your Email" required
+                    <input type="email" name="email" id="email" placeholder="Your Email" required
                         class="py-4 px-4 rounded-lg border-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
-                    <input type="text" name="subject" id="" placeholder="Subject" required
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required
                         class="py-4 px-4 rounded-lg border-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none">
-                    <textarea name="message" id="" placeholder="Your Message" required
+                    <textarea name="message" id="message" placeholder="Your Message" required
                         class="resize-y py-4 px-4 rounded-lg border-2 border-[#ffffff14] hover:border-[#ff014f] ease-in-out duration-500 focus:border-[#ff014f] focus:ring-0 focus:outline-none"></textarea>
 
                     <button type="submit"
@@ -1476,6 +1476,9 @@
     </script>
     <script src="script.js"></script>
 
+    <!-- emailjs script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
