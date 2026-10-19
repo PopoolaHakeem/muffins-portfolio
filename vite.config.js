@@ -7,6 +7,8 @@ const rootDir = fileURLToPath(new URL(".", import.meta.url));
 
 const pages = [
   "About.html",
+  "admin-dashboard.html",
+  "admin-login.html",
   "branding-design.html",
   "Contact.html",
   "index.html",
