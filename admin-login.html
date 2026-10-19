@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | MuffinsCode</title>
+
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <main class="login-container">
+        <a href="./index.html" class="admin-brand">
+            Muffins<span>Code</span>
+        </a>
+
+        <div class="login-card">
+            <div class="login-icon" aria-hidden="true">🔐</div>
+
+            <h1>Welcome Back</h1>
+
+            <p class="login-description">
+                Sign in to manage your portfolio projects.
+            </p>
+
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="adminEmail"
+                        placeholder="Enter your admin email"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="adminPassword">Password</label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="adminPassword"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                            aria-label="Show password"
+                        >
+                            Show
+                        </button>
+                    </div>
+                </div>
+
+                <p
+                    id="loginMessage"
+                    class="login-message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+                <button type="submit" id="loginButton" class="login-button">
+                    Sign In
+                </button>
+            </form>
+
+            <a href="./index.html" class="back-link">
+                ← Back to portfolio
+            </a>
+        </div>
+
+        <p class="login-footer">
+            &copy; 2026 MuffinsCode. Admin access only.
+        </p>
+    </main>
+
+    <script type="module" src="./js/admin-login.js"></script>
+</body>
+</html>

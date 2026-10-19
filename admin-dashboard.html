@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | MuffinsCode</title>
+
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ========================================
+         DASHBOARD HEADER
+    ========================================= -->
+
+    <header class="dashboard-header">
+        <a href="./index.html" class="admin-brand">
+            Muffins<span>Code</span>
+        </a>
+
+        <div class="dashboard-header-actions">
+            <a href="./index.html" class="dashboard-link">
+                View Portfolio ↗
+            </a>
+
+            <button id="logoutButton" class="logout-button">
+                Logout
+            </button>
+        </div>
+    </header>
+
+    <!-- ========================================
+         DASHBOARD MAIN CONTENT
+    ========================================= -->
+
+    <main class="dashboard-container">
+
+        <section class="dashboard-intro">
+            <div>
+                <p class="dashboard-eyebrow">PORTFOLIO MANAGEMENT</p>
+                <h1>Admin Dashboard</h1>
+                <p class="dashboard-subtitle">
+                    Manage your projects from one place.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECT STATISTICS -->
+
+        <section class="dashboard-stats">
+
+            <article class="stat-card">
+                <span>Total Projects</span>
+                <strong id="totalProjects">0</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Featured Projects</span>
+                <strong id="featuredProjects">0</strong>
+            </article>
+
+            <article class="stat-card">
+                <span>Other Projects</span>
+                <strong id="otherProjects">0</strong>
+            </article>
+
+        </section>
+
+        <!-- ========================================
+             PROJECT FORM
+        ========================================= -->
+
+        <section class="dashboard-panel" id="projectFormSection">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="dashboard-eyebrow">PROJECT MANAGEMENT</p>
+
+                    <h2 id="formHeading">Add New Project</h2>
+
+                    <p>
+                        Enter the project details below.
+                    </p>
+                </div>
+            </div>
+
+            <form id="projectForm">
+
+                <div class="dashboard-form-grid">
+
+                    <!-- PROJECT TITLE -->
+
+                    <div class="form-group">
+                        <label for="projectTitle">Project Name *</label>
+
+                        <input type="text" id="projectTitle" placeholder="e.g. Ace Autos" required>
+                    </div>
+
+                    <!-- LIVE URL -->
+
+                    <div class="form-group">
+                        <label for="projectLiveUrl">Live Website URL *</label>
+
+                        <input type="url" id="projectLiveUrl" placeholder="https://example.com" required>
+                    </div>
+
+                    <!-- GITHUB URL -->
+
+                    <div class="form-group">
+                        <label for="projectGithubUrl">
+                            GitHub Repository URL
+                        </label>
+
+                        <input type="url" id="projectGithubUrl" placeholder="https://github.com/username/project">
+                    </div>
+
+                    <!-- IMAGE URL AND PREVIEW -->
+                    <!-- PROJECT IMAGE SOURCE -->
+
+                    <div class="form-group form-group-full">
+                        
+                        
+                        <label for="projectImageType">Project Image Source *</label>
+
+                        <select id="projectImageType">
+                            <option value="url">Online Image URL</option>
+                            <option value="local">Local Project Image Path</option>
+                        </select>
+
+                        <small>
+                            Choose an online image URL or a local image path from your project folder.
+                        </small>
+                        
+
+                    </div>
+
+                    <!-- PROJECT IMAGE PATH OR URL -->
+
+                    <div class="form-group form-group-full">
+
+                        
+                        <label for="projectImageUrl">Thumbnail Image *</label>
+
+                        <input type="text" id="projectImageUrl" placeholder="https://example.com/image.jpg" required>
+
+                        <small id="imageInputHelp">
+                            Paste a direct URL to an image hosted online.
+                        </small>
+
+                        <!-- IMAGE PREVIEW -->
+
+                        <div id="imagePreviewContainer" class="image-preview-container" hidden>
+
+                            <p>Image Preview</p>
+
+                            <img id="projectImagePreview" src="" alt="Project thumbnail preview">
+
+                            <p id="imagePreviewMessage" role="status"></p>
+
+                        </div>
+                        
+
+                    </div>
+
+
+                    <!-- TECHNOLOGIES -->
+
+                    <div class="form-group form-group-full">
+                        <label for="projectTechnologies">
+                            Technologies Used
+                        </label>
+
+                        <input type="text" id="projectTechnologies" placeholder="HTML, CSS, JavaScript, Tailwind CSS">
+
+                        <small>
+                            Separate each technology with a comma.
+                        </small>
+                    </div>
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="form-group form-group-full">
+                        <label for="projectDescription">
+                            Project Description *
+                        </label>
+
+                        <textarea id="projectDescription" rows="4" placeholder="Describe what your project does..."
+                            required></textarea>
+                    </div>
+
+                </div>
+
+                <!-- FEATURED CHECKBOX -->
+
+                <label class="featured-option">
+                    <input type="checkbox" id="projectFeatured">
+
+                    <span>
+                        <strong>Feature this project</strong>
+
+                        <small>
+                            Featured projects can appear on your homepage.
+                            Only four will be displayed.
+                        </small>
+                    </span>
+                </label>
+
+                <!-- FORM FEEDBACK -->
+
+                <p id="formMessage" class="dashboard-message" role="status" aria-live="polite"></p>
+
+                <!-- FORM BUTTONS -->
+
+                <div class="form-actions">
+
+                    <button type="submit" id="saveProjectButton" class="login-button">
+                        Save Project
+                    </button>
+
+                    <button type="button" id="cancelEditButton" class="cancel-button" hidden>
+                        Cancel Edit
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- ========================================
+             PROJECT LIST
+        ========================================= -->
+
+        <section class="dashboard-panel projects-management">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="dashboard-eyebrow">MY PORTFOLIO</p>
+
+                    <h2>Manage Projects</h2>
+
+                    <p>
+                        Edit existing projects or remove projects you no
+                        longer want to display.
+                    </p>
+                </div>
+
+                <button id="refreshProjectsButton" class="cancel-button">
+                    Refresh
+                </button>
+            </div>
+
+            <p id="projectsMessage" class="dashboard-message" role="status" aria-live="polite"></p>
+
+            <div id="adminProjectsList" class="admin-projects-list"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        &copy; 2026 MuffinsCode — Portfolio Administration
+    </footer>
+
+    <script type="module" src="./js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

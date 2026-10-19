@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
     <style>
@@ -36,8 +36,8 @@
             class=" h-full w-70  px- pt-6 md:py-5 overflow-y-auto bg-[#141414] space-y-7 border-default-medium border-default">
 
             <!-- logo -->
-            <div class=" text-xl flex justify-between items-center space-x-1 font-[700] px-4 ">
-                <div class="flex justify-between items-end space-x-1 font-[700]">
+            <div class=" text-xl flex justify-between items-center space-x-1 font-bold px-4 ">
+                <div class="flex justify-between items-end space-x-1 font-bold">
                     <img src="/images/muffins copy.png" alt="" class="w-8 h-8 rounded-full">
                     <p>MuffinsCode</p>
                 </div>
@@ -154,7 +154,7 @@
 
         <!-- Nav Bar -->
         <nav id="navBg"
-            class="z-40 px-4 py-4 absolute fixed flex items-end w-full justify-between gap-2 bg-transparent font-[700] text-white">
+            class="z-40 px-4 py-4  fixed flex items-end w-full justify-between gap-2 bg-transparent font-bold text-white">
 
             <!-- Logo -->
             <div class="text-xl flex justify-center items-end font-bold space-x-1">
@@ -163,7 +163,7 @@
             </div>
 
             <!-- nav links  -->
-            <div class="flex items-center justify-center gap-5 hidden lg:flex">
+            <div class="items-center justify-center gap-5 hidden lg:flex">
 
                 <a href="/index.html"
                     class="hover:text-[#FF014F] hover:bg-red-300 px-4 py-1 rounded-lg transition duration-300 ease-in-out">
@@ -192,7 +192,7 @@
                     </a>
 
                     <!-- Dropdown menu -->
-                    <div id="servicedropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#000] text-white">
+                    <div id="servicedropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-black text-white">
                         <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="branding-design.html"
@@ -237,7 +237,7 @@
 
             <!-- Get in Touch button -->
             <div class="flex justify-center items-center space-x-5 lg:space-x-0">
-                <div class="flex justify-center items-center space-x-2 hidden md:flex">
+                <div class="justify-center items-center space-x-2 hidden md:flex">
 
                     <!-- whatsapp -->
                     <a href="https://wa.me/+2348135350296">
@@ -277,7 +277,7 @@
                 <div>
                     <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
                         aria-controls="default-sidebar" type="button" id="menuBtn"
-                        class="w-10 h-10 bg-[#212529] flex justify-center items-center text-center rounded-full hover:bg-[#FF014F] duration-500 cursor-pointer box-border focus:ring-4 focus:ring-[#FF014F] focus:outline-none inline-flex lg:hidden">
+                        class="w-10 h-10 bg-[#212529] flex justify-center items-center text-center rounded-full hover:bg-[#FF014F] duration-500 cursor-pointer box-border focus:ring-4 focus:ring-[#FF014F] focus:outline-none lg:hidden">
                         <iconify-icon icon="ri:menu-3-fill" width="24" height="24" style="color: #ffff"></iconify-icon>
                     </button>
                 </div>
@@ -299,7 +299,7 @@
                     I'm Popoola Hakeem a <br>
                     Web Developer
                 </p>
-                <p class="text-[16px] leading-7 md:leading-10c font-sans serif text-[#9F9F9F] font-[400]">
+                <p class="text-[16px] leading-7 md:leading-10c font-sans serif text-[#9F9F9F] font-normal">
                     <span>I build fast, modern, and scalable web experiences that </span>
                     <span>combine creativity with functionality.</span>
                 </p>
@@ -337,7 +337,7 @@
 
         <!-- second section > Designs -->
         <div
-            class="w-[100%] h-full px-4 py-10 bg-black space-y-8 text-white flex flex-col justify-between md:space-y-0 md:grid md:grid-cols-2 md:gap-8 lg:flex lg:flex-row lg:space-x-5">
+            class="w-full h-full px-4 py-10 bg-black space-y-8 text-white flex flex-col justify-between md:space-y-0 md:grid md:grid-cols-2 md:gap-8 lg:flex lg:flex-row lg:space-x-5">
 
             <div data-aos="fade-up" data-aos-duration="900"
                 class="bg-[#141414] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center h-auto py-20 px-10 space-y-3">
@@ -390,8 +390,7 @@
         <div class="bg-black h- w-full px-4 flex flex-col justify-center items-center lg:space-x-4 lg:flex-row">
 
             <div data-aos="fade-up" data-aos-duration="900"
-                class="text-white bg-[#FF014F] bg-gradient-to-br from-[#141414] via-[#000] to-[#FF014F] border border-[#ff494a29] w-full h-auto
-                        border border-[#ff494a29] rounded-2xl flex flex-col justify-center pb-10 px-6 space-y-3 md:py-">
+                class="text-white bg-[#FF014F] bg-linear-to-br from-[#141414] via-black to-[#FF014F] border w-full h-auto border-[#ff494a29] rounded-2xl flex flex-col justify-center pb-10 px-6 space-y-3 md:py-">
                 <h1 data-target="4" class="counter text-[167px] font-bold text-[#ff014f]">
                     <!-- TARGET NUMBER OF 4+ -->
                 </h1>
@@ -399,7 +398,7 @@
                 <h3 class="text-2xl font-bold">
                     Years of Experience
                 </h3>
-                <p class="text-[18px] font-[400] font-sans serif">
+                <p class="text-[18px] font-normal font-sans serif">
                     Delivering reliable solutions, guiding businesses to improve efficiency, growth, and overall
                     performance.
                 </p>
@@ -410,7 +409,7 @@
                 class=" bg-purple-30 w-full h-full py-10 text-white flex flex-col justify-center items-center space-y-7 md:space-y-0 md:grid md:grid-cols-2 md:gap-6">
 
                 <div data-aos="fade-up" data-aos-duration="900"
-                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+                    class="bg-[#141414] border w-full border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
                     <p data-target="30" class="counter text-4xl md:text-5xl font-bold">
                        <!-- TARGET NUMBER OF 30+ -->
                     </p>
@@ -420,7 +419,7 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900"
-                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+                    class="bg-[#141414] border w-full border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
                     <p data-target="50" class="counter text-4xl md:text-5xl font-bold">
                         <!-- TARGET NUMBER OF 50+ -->
                     </p>
@@ -430,7 +429,7 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900"
-                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+                    class="bg-[#141414] border w-full border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
 
                     <p data-target="20" class=" counter text-4xl md:text-5xl font-bold">
                         <!-- TARGET NUMBER OF 20+ -->
@@ -442,7 +441,7 @@
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900"
-                    class="bg-[#141414] border border-[#ff494a29] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
+                    class="bg-[#141414] w-full border border-[#ff494a29] rounded-2xl flex flex-col justify-center items-center hover:border-[#ff014f] transition-all duration-500 ease_in_out h-auto py-13 px-10 md:space-y-2 lg:space-y-3">
 
                     <p data-target="23" class="counter text-4xl md:text-5xl font-bold">
                         <!-- TARGET NUMBER OF 23+ -->
@@ -458,7 +457,7 @@
 
         <!-- progress chat -->
         <div
-            class="w-full h-full text-white bg-black bg-black flex flex-col-reverse justify-center items-center space-y-6 px-4 py-10 lg:flex-row lg:space-x-6 lg:space-y-0">
+            class="w-full h-full text-white bg-black flex flex-col-reverse justify-center items-center space-y-6 px-4 py-10 lg:flex-row lg:space-x-6 lg:space-y-0">
 
             <!-- Design skills -->
             <div class="w-full bg-black flex flex-col justify-center py-7 space-y-7">
@@ -472,28 +471,28 @@
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium ">Web Design</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">Ui/Ux Design</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">Web Research</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">Marketing</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
@@ -512,28 +511,28 @@
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">HTML</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 100%"></div>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">CSS</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 95%"></div>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">JavaScript</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
                     </div>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="900">
                     <p class="mb-3 text-xl font-medium">Tailwind CSS</p>
-                    <div class="w-full bg-gray-200 rounded-full h-[8px] dark:bg-gray-700">
+                    <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
                         <div class="bg-[#FF014F] h-full rounded-full" style="width: 90%"></div>
                     </div>
                 </div>
@@ -557,7 +556,7 @@
                     <span>Project</span>
                 </h1>
                 <p data-aos="fade-up" data-aos-duration="900"
-                    class="text-center text-[#9F9F9F] font-[400] font-sans serif">
+                    class="text-center text-[#9F9F9F] font-normal font-sans serif">
                     I design and build modern, responsive digital experiences that combine creativity, functionality,
                     and performance. Each project is approached with attention to detail, usability, and clean code to
                     deliver solutions that truly work.
@@ -568,7 +567,7 @@
             <!-- services -->
             <div
                 class="h-full w-full flex flex-col justify-center space-x-5 space-y-0 lg:flex-row lg:space-y-0 lg:space-x- lg:space-x-10">
-                <div class="w-full h-full flex justify-center items-center grid grid-cols-1 gap-4 py-5">
+                <div class="w-full h-full justify-center items-center grid grid-cols-1 gap-4 py-5">
 
                     <!-- 01 -->
                     <div data-aos="fade-up" data-aos-duration="900"
@@ -647,7 +646,7 @@
                 </h1>
 
                 <p data-aos="fade-up" data-aos-duration="900"
-                    class="text-center text-[#9F9F9F] font-[400] font-sans serif">
+                    class="text-center text-[#9F9F9F] font-normal font-sans serif">
                     Empowering creativity through education and experience, fostering innovation, and inspiring
                     individuals to
                     reach their full potential.
@@ -669,7 +668,7 @@
                     <div data-aos="fade-up" data-aos-duration="900"
                         class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
 
-                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                        <p class="space-x-2 font-medium text-[19px] text-white">
                             Bachelor of Science in Computer Science
                         </p>
 
@@ -686,7 +685,7 @@
                     <div data-aos="fade-up" data-aos-duration="900"
                         class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
 
-                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                        <p class="space-x-2 font-medium text-[19px] text-white">
                             Web Design Certification
                         </p>
 
@@ -703,7 +702,7 @@
                     <div data-aos="fade-up" data-aos-duration="900"
                         class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
 
-                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                        <p class="space-x-2 font-medium text-[19px] text-white">
                             Self-Taught Web Developer
                         </p>
 
@@ -721,7 +720,7 @@
                     <div data-aos="fade-up" data-aos-duration="900"
                         class="bg-[#141414] text-white h-full w-full py-7 px-3 flex flex-col space-y-3 justify-center rounded-[15px] border border-black hover:border-[#ff014f] transition-all duration-500 ease_in_out shadow-xl md:px-5">
 
-                        <p class="space-x-2 font-[500] text-[19px] text-white">
+                        <p class="space-x-2 font-medium text-[19px] text-white">
                             Professional Web Developer
                         </p>
 
@@ -765,7 +764,7 @@
                             Soft Tech (2 Years)
                         </h2>
 
-                        <h3 class="font-[400] text-[17px]">
+                        <h3 class="font-normal text-[17px]">
                             UI/UX Designer
                         </h3>
 
@@ -788,7 +787,7 @@
                             ModernTech (3 Years)
                         </h2>
 
-                        <h3 class="font-[400] text-[17px]">
+                        <h3 class="font-normal text-[17px]">
                             Web Developer
                         </h3>
 
@@ -845,7 +844,7 @@
 
 
         <!-- Projects -->
-        <div class="bg-black h-auto w-full px-4 pt-10 pb-2 flex flex-col justify-center items-center">
+        <div class="bg-black h-auto w-full px-4 pt-10 pb-2 flex flex-col justify-center items-center">i havn
 
             <!-- heading -->
             <div class="h-full w-full flex flex-col justify-center items-center space-y-3 pb-7">
@@ -861,7 +860,7 @@
                 </h1>
 
                 <p data-aos="fade-up" data-aos-duration="900"
-                    class="text-center text-[#9F9F9F] font-[400] font-sans serif">
+                    class="text-center text-[#9F9F9F] font-normal font-sans serif">
                     I design and develop responsive modern websites and web applications that combine clean code 
                     with creativity, functionality, and great user experience.
                 </p>
@@ -869,230 +868,12 @@
             </div>
 
             <!-- Projects links -->
-            <div id="projects"
-                class="w-full py-6 h-full flex flex-col justify-center items-center md:grid md:grid-cols-2 gap-8">
+            <div id="projects" class="w-full py-6 h-full grid grid-cols-1 md:grid-cols-2 gap-8" aria-live="polite"></div>
 
-                <!-- project 1 -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class="h-full w-full py-6 flex flex-col justify-center items-cener space-y-3 active:decoration-red-500">
-
-                    <div class="border-2 border-[#1a1a1a] p-10 rounded-2xl flex justify-center items-center">
-                        <img src="/images/my-port.png" alt="" class="hover:scale-105 duration-500 ease-in-out">
-                    </div>
-
-                    <div
-                        class="space-y-3 text-white hover:underline hover:underline-offset-5 hover:text-[#fff] hover:scale-102 duration-500 ease-in-out">
-
-                        <a href="https://muffins-code.vercel.app/">
-                            <h2 class="text-2xl font-semibold">
-                                Personal Portfolio
-                            </h2>
-                        </a>
-                        <p class="text-[#9F9F9F] text-[16px] font-sans serif hover:decoration-none">
-                            Featured Project
-                        </p>
-
-                        <a href="https://muffins-code.vercel.app/"><span
-                                class="bg-[#141414] w-20 h-10 text-white font-semibold text-xl flex justify-center items-center space-x-2">
-                                <p>
-                                    Live
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="#ff014f" stroke-linecap="round" stroke-width="1.5">
-                                        <path d="M21.002 12A9 9 0 0 1 12 21a9 9 0 1 1 0-18" />
-                                        <path stroke-linejoin="round"
-                                            d="M20.554 3.47L14.99 9.01m5.564-5.54c-.495-.496-3.832-.45-4.537-.44m4.537.44c.495.494.449 3.83.439 4.535" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- project 2 -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class="h-full w-full py-6 flex flex-col justify-center items-cener space-y-3 active:decoration-red-500">
-
-                    <div class="border-2 border-[#1a1a1a] p-10 rounded-2xl flex justify-center items-center">
-                        <img src="/images/ace-autos.png" alt="" class="hover:scale-105 duration-500 ease-in-out">
-                    </div>
-
-                    <div
-                        class="space-y-3 text-white hover:underline hover:underline-offset-5 hover:text-[#fff] hover:scale-102 duration-500 ease-in-out">
-                        <a href="https://ace-autos.vercel.app/">
-                            <h2 class="text-2xl font-semibold">
-                                Ace Autos
-                            </h2>
-                        </a>
-                        <p class="text-[#9F9F9F] text-[16px] font-sans serif hover:decoration-none">
-                            Automotive service website
-                        </p>
-                        <a href="https://ace-autos.vercel.app/"><span
-                                class="bg-[#141414] w-20 h-10 text-white font-semibold text-xl flex justify-center items-center space-x-2">
-                                <p>
-                                    Live
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="#ff014f" stroke-linecap="round" stroke-width="1.5">
-                                        <path d="M21.002 12A9 9 0 0 1 12 21a9 9 0 1 1 0-18" />
-                                        <path stroke-linejoin="round"
-                                            d="M20.554 3.47L14.99 9.01m5.564-5.54c-.495-.496-3.832-.45-4.537-.44m4.537.44c.495.494.449 3.83.439 4.535" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- project 3 -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class="h-full w-full py-6 flex flex-col justify-center items-cener space-y-3 active:decoration-red-500">
-
-                    <div class="border-2 border-[#1a1a1a] p-10 rounded-2xl flex justify-center items-center">
-                        <img src="/images/make-up.png" alt="" class="hover:scale-105 duration-500 ease-in-out">
-                    </div>
-
-                    <div
-                        class="space-y-3 text-white hover:underline hover:underline-offset-5 hover:text-[#fff] hover:scale-102 duration-500 ease-in-out">
-                        <a href="https://muffins-makeup.vercel.app/">
-                            <h2 class="text-2xl font-semibold">
-                                Makeup Website
-                            </h2>
-                        </a>
-                        <p class="text-[#9F9F9F] text-[16px] font-sans serif hover:decoration-none">
-                            Responsive beauty booking platform
-                        </p>
-                        <a href="https://muffins-makeup.vercel.app/"><span
-                                class="bg-[#141414] w-20 h-10 text-white font-semibold text-xl flex justify-center items-center space-x-2">
-                                <p>
-                                    Live
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="#ff014f" stroke-linecap="round" stroke-width="1.5">
-                                        <path d="M21.002 12A9 9 0 0 1 12 21a9 9 0 1 1 0-18" />
-                                        <path stroke-linejoin="round"
-                                            d="M20.554 3.47L14.99 9.01m5.564-5.54c-.495-.496-3.832-.45-4.537-.44m4.537.44c.495.494.449 3.83.439 4.535" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class="h-full w-full py-6 flex flex-col justify-center items-cener space-y-3 active:decoration-red-500">
-
-                    <div class="border-2 border-[#1a1a1a] p-10 rounded-2xl flex justify-center items-center">
-                        <img src="/images/ocubee.png" alt="" class="hover:scale-105 duration-500 ease-in-out">
-                    </div>
-
-
-                    <div
-                        class="space-y-3 text-white hover:underline hover:underline-offset-5 hover:text-[#fff] hover:scale-102 duration-500 ease-in-out">
-                        <a href="https://muffins-ocubee.vercel.app/">
-                            <h2 class="text-2xl font-semibold">
-                                OCUBE 
-                            </h2>
-                        </a>
-                        <p class="text-[#9F9F9F] text-[16px] font-sans serif hover:decoration-none">
-                            Online Learning Platform
-                        </p>
-                        <a href="https://muffins-ocubee.vercel.app/">
-                            <span
-                                class="bg-[#141414] w-20 h-10 text-white font-semibold text-xl flex justify-center items-center space-x-2">
-                                <p>
-                                    Live
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="#ff014f" stroke-linecap="round" stroke-width="1.5">
-                                        <path d="M21.002 12A9 9 0 0 1 12 21a9 9 0 1 1 0-18" />
-                                        <path stroke-linejoin="round"
-                                            d="M20.554 3.47L14.99 9.01m5.564-5.54c-.495-.496-3.832-.45-4.537-.44m4.537.44c.495.494.449 3.83.439 4.535" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class="h-full w-full py-6 flex flex-col justify-center items-cener space-y-3 active:decoration-red-500 ">
-
-                    <div class="border-2 border-[#1a1a1a] p-10 rounded-2xl flex justify-center items-center">
-                        <img src="/images/age-cal.png" alt="" class="hover:scale-105 duration-500 ease-in-out">
-                    </div>
-
-
-                    <div
-                        class="space-y-3 text-white hover:underline hover:underline-offset-5 hover:text-[#fff] hover:scale-102 duration-500 ease-in-out">
-                        <span>
-                            <a href="https://muffins-age-calculator-app.vercel.app/">
-                                <h2 class="text-2xl font-semibold">
-                                    Age Calculator App
-                                </h2>
-                            </a>
-                        </span>
-                        <p class="text-[#9F9F9F] text-[16px] font-sans serif hover:decoration-none">
-                            Real-time age calculation based on user input
-                        </p>
-                        <a href="https://muffins-age-calculator-app.vercel.app/"><span
-                                class="bg-[#141414] w-20 h-10 text-white font-semibold text-xl flex justify-center items-center space-x-2">
-                                <p>
-                                    Live
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="#ff014f" stroke-linecap="round" stroke-width="1.5">
-                                        <path d="M21.002 12A9 9 0 0 1 12 21a9 9 0 1 1 0-18" />
-                                        <path stroke-linejoin="round"
-                                            d="M20.554 3.47L14.99 9.01m5.564-5.54c-.495-.496-3.832-.45-4.537-.44m4.537.44c.495.494.449 3.83.439 4.535" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class="h-full w-full py-6 flex flex-col justify-center items-cener space-y-3 active:decoration-red-500 ">
-
-                    <div class="border-2 border-[#1a1a1a] p-10 rounded-2xl flex justify-center items-center">
-                        <img src="/images/client-mng.png" alt="" class="hover:scale-105 duration-500 ease-in-out">
-                    </div>
-
-
-                    <div
-                        class="space-y-3 text-white hover:underline hover:underline-offset-5 hover:text-[#fff] hover:scale-102 duration-500 ease-in-out">
-                        <span>
-                            <a href="https://clients-management-system-phi.vercel.app/">
-                                <h2 class="text-2xl font-semibold">
-                                    Client Management System 
-                                </h2>
-                            </a>
-                        </span>
-                        <p class="text-[#9F9F9F] text-[16px] font-sans serif hover:decoration-none">
-                            A client dashboard with role-based views and dynamic data handling. 
-                        </p>
-                        <a href="https://clients-management-system-phi.vercel.app/"><span
-                                class="bg-[#141414] w-20 h-10 text-white font-semibold text-xl flex justify-center items-center space-x-2">
-                                <p>
-                                    Live
-                                </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="#ff014f" stroke-linecap="round" stroke-width="1.5">
-                                        <path d="M21.002 12A9 9 0 0 1 12 21a9 9 0 1 1 0-18" />
-                                        <path stroke-linejoin="round"
-                                            d="M20.554 3.47L14.99 9.01m5.564-5.54c-.495-.496-3.832-.45-4.537-.44m4.537.44c.495.494.449 3.83.439 4.535" />
-                                    </g>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+            <a href="/Project.html"
+                class="mt-6 inline-flex items-center justify-center gap-2 rounded-full border border-[#FF014F] px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#FF014F] focus:outline-none focus:ring-2 focus:ring-[#FF014F] focus:ring-offset-2 focus:ring-offset-black">
+                View All Projects <span aria-hidden="true">↗</span>
+            </a>
 
         </div>
 
@@ -1109,20 +890,20 @@
                     Elevated Designs Personalized the best Experiences
                 </h1>
 
-                <p data-aos="fade-up" data-aos-duration="900" class=" text-[#9F9F9F] font-[400] font-sans serif">
+                <p data-aos="fade-up" data-aos-duration="900" class=" text-[#9F9F9F] font-normal font-sans serif">
                     Building responsive, high-performance web interfaces with clean design and seemless user experience,
                     and a focus on modern design principles.
                 </p>
             </div>
 
-            <div class="text-[#fff] lg:text-[#9F9F9F] ">
+            <div class="text-white lg:text-[#9F9F9F] ">
                 <!-- skills -->
                 <div data-aos="fade-up" data-aos-duration="900"
                     class="w-full h-full py-10 flex flex-col justify-center items-center space-y-3 
-                    lg:flex-row lg:justify-between lg:items-start px-4 lg:space-y-0 lg:space-x-5 hover:bg-[#ff014f] hover:text-[#fff] transition-all duration-500 ease_in_out">
+                    lg:flex-row lg:justify-between lg:items-start px-4 lg:space-y-0 lg:space-x-5 hover:bg-[#ff014f] hover:text-white transition-all duration-500 ease_in_out">
 
                     <p
-                        class="mx- h-23 flex justify-center items-center rounded-full lg:border-3 lg:border-[#ffffff14] h-full w-full lg:w-43 lg:h-21">
+                        class="mx- flex justify-center items-center rounded-full lg:border-3 lg:border-[#ffffff14] h-full w-full lg:w-43 lg:h-21">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 512 512">
                             <path fill="#fff"
                                 d="m243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24h400c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0M128 224H64v196.3c-.6.3-1.2.7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512h448c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1L448 224h-64v192h-40V224h-64v192h-48V224h-64v192h-40zM256 64a32 32 0 1 1 0 64a32 32 0 1 1 0-64" />
@@ -1143,10 +924,10 @@
 
                 <div data-aos="fade-up" data-aos-duration="900"
                     class=" w-full h-full py-10 flex flex-col justify-center items-center space-y-3 
-                    lg:flex-row lg:justify-between lg:items-start px-4 lg:space-y-0 lg:space-x-5 hover:bg-[#ff014f] hover:text-[#fff] transition-all duration-500 ease_in_out">
+                    lg:flex-row lg:justify-between lg:items-start px-4 lg:space-y-0 lg:space-x-5 hover:bg-[#ff014f] hover:text-white transition-all duration-500 ease_in_out">
 
                     <p
-                        class="mx- h-23 flex justify-center items-center rounded-full lg:border-3 lg:border-[#ffffff14] h-full w-full lg:w-43 lg:h-21">
+                        class="mx- flex justify-center items-center rounded-full lg:border-3 lg:border-[#ffffff14] h-full w-full lg:w-43 lg:h-21">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
                             <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2">
@@ -1170,10 +951,10 @@
 
                 <div data-aos="fade-up" data-aos-duration="900"
                     class=" w-full h-full py-10 flex flex-col justify-center items-center space-y-3 
-                    lg:flex-row lg:justify-between lg:items-start px-4 lg:space-y-0 lg:space-x-5 hover:bg-[#ff014f] hover:text-[#fff] transition-all duration-500 ease_in_out">
+                    lg:flex-row lg:justify-between lg:items-start px-4 lg:space-y-0 lg:space-x-5 hover:bg-[#ff014f] hover:text-white transition-all duration-500 ease_in_out">
 
                     <p
-                        class="mx- h-23 flex justify-center items-center rounded-full lg:border-3 lg:border-[#ffffff14] h-full w-full lg:w-43 lg:h-21">
+                        class="mx- h-23 flex justify-center items-center rounded-full lg:border-3 lg:border-[#ffffff14] w-full lg:w-43 lg:h-21">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 256 256">
                             <path fill="#fff"
                                 d="M246 92.68a13.94 13.94 0 0 0-4.1-9.9L173.21 14.1a14 14 0 0 0-19.8 0l-28.73 28.73l-58.46 21.93a14 14 0 0 0-8.9 10.8L34.08 215a6 6 0 0 0 5.92 7a6.6 6.6 0 0 0 1-.08l139.44-23.24a14 14 0 0 0 10.81-8.9l21.92-58.46l28.74-28.74a13.92 13.92 0 0 0 4.09-9.9m-66 92.89a2 2 0 0 1-1.54 1.27L57.49 207l52.87-52.88a26 26 0 1 0-8.48-8.48L49 198.53l20.17-121A2 2 0 0 1 70.43 76l56.06-21L201 129.51ZM110 132a14 14 0 1 1 14 14a14 14 0 0 1-14-14m123.41-37.9L208 119.51L136.48 48l25.42-25.42a2 2 0 0 1 2.83 0l68.68 68.69a2 2 0 0 1 0 2.83" />
@@ -1218,7 +999,7 @@
                         <!-- Image -->
                         <div class="flex justify-center md:justify-end">
                             <img src="/images/bg-image-1png.png" alt="Client portrait"
-                                class="h-[420px] object-contain grayscale" />
+                                class="h-105 object-contain grayscale" />
                         </div>
                     </div>
                 </article>
@@ -1240,7 +1021,7 @@
 
                         <div class="flex justify-center md:justify-end">
                             <img src="/images/testimonial-2.png" alt="Client portrait"
-                                class="h-[420px] object-contain grayscale" />
+                                class="h-105 object-contain grayscale" />
                         </div>
                     </div>
                 </article>
@@ -1261,7 +1042,7 @@
 
                         <div class="flex justify-center md:justify-end">
                             <img src="/images/testimonial-3.png" alt="Client portrait"
-                                class="h-[420px] object-contain grayscale" />
+                                class="h-105 object-contain grayscale" />
                         </div>
                     </div>
                 </article>
@@ -1284,7 +1065,7 @@
                         Elevate your brand with me
                     </h1>
 
-                    <p data-aos="fade-up" data-aos-duration="900" class=" text-[#9F9F9F] font-[400] font-sans serif">
+                    <p data-aos="fade-up" data-aos-duration="900" class=" text-[#9F9F9F] font-normal font-sans serif">
                         I build fast, responsive, and visually engaging websites that help businesses grow.
                         Ready to start your project? Send a message and let's create something amazing together.
                     </p>
@@ -1324,7 +1105,7 @@
 
                 <!-- MuffinsCode -->
                 <div
-                    class="relative py-10 flex flex-col justify-start items-start h-[350px] w-full md:w-[41%] md:h-[490px] space-y-8 animate-bgMove">
+                    class="relative py-10 flex flex-col justify-start items-start h-87.5 w-full md:w-[41%] md:h-122.5 space-y-8 animate-bgMove">
 
                     <!-- animate bg -->
                     <div class="w-[85%] h-full bg-cover bg-center absolute">
@@ -1363,25 +1144,25 @@
                     </h3>
 
                     <!-- links -->
-                    <ul class="space-y-4 font-sans serif font-[500]">
+                    <ul class="space-y-4 font-sans serif font-medium">
                         <li
-                            class="hover:underline hover:underline-offset-6 hover:text-[#fff] duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
+                            class="hover:underline hover:underline-offset-6 hover:text-white duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
                             <a href="index.html">Home</a>
                         </li>
                         <li
-                            class="hover:underline hover:underline-offset-6 hover:text-[#fff] duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
+                            class="hover:underline hover:underline-offset-6 hover:text-white duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
                             <a href="About.html">About Me</a>
                         </li>
                         <li
-                            class="hover:underline hover:underline-offset-6 hover:text-[#fff] duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
+                            class="hover:underline hover:underline-offset-6 hover:text-white duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
                             <a href="Service.html">Service</a>
                         </li>
                         <li
-                            class="hover:underline hover:underline-offset-6 hover:text-[#fff] duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
+                            class="hover:underline hover:underline-offset-6 hover:text-white duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
                             <a href="Project.html">Project</a>
                         </li>
                         <li
-                            class="hover:underline hover:underline-offset-6 hover:text-[#fff] duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
+                            class="hover:underline hover:underline-offset-6 hover:text-white duration-500 ease-in-out active:decoration-[#ff014f] focus:ring-0 focus:outline-none">
                             <a href="Contact.html">Contact</a>
                         </li>
                     </ul>
@@ -1396,7 +1177,7 @@
 
                     <section class="space-y-4 w-full flex flex-col justify-center items-start">
                         <!-- email -->
-                        <p class="flex space-x-2 justify-center items-center font-sans serif font-[500]">
+                        <p class="flex space-x-2 justify-center items-center font-sans serif font-medium">
                             <span
                                 class=" bg-[#02010100] w-12 h-12 border-2 border-[#FFFFFF14] rounded-full flex justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1408,7 +1189,7 @@
                         </p>
 
                         <!-- address -->
-                        <p class="flex space-x-2 justify-center items-center font-sans serif font-[500]">
+                        <p class="flex space-x-2 justify-center items-center font-sans serif font-medium">
                             <span
                                 class=" bg-[#02010100] w-12 h-12 border-2 border-[#FFFFFF14] rounded-full flex justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1420,7 +1201,7 @@
                         </p>
 
                         <!-- phone number -->
-                        <p class="flex space-x-2 justify-center items-center font-sans serif font-[500]">
+                        <p class="flex space-x-2 justify-center items-center font-sans serif font-medium">
                             <span
                                 class=" bg-[#02010100] w-12 h-12 border-2 border-[#FFFFFF14] rounded-full flex justify-center items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -1508,16 +1289,18 @@
 
 
     </div>
-    <script src="loader.js"></script>
+    <script type="module" src="js/loader.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="script.js"></script>
+    <script type="module" src="js/script.js"></script>
 
     <!-- emailjs script -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="contact.js"></script>
+    <script type="module" src="js/contact.js"></script>
+    <script type="module" src="js/projects.js"></script>
+
 </body>
 
 </html>
